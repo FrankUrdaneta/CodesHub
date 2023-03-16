@@ -19,7 +19,7 @@ function App() {
       <Navbar bg="light" expand="lg" fixed="top">
         <Container>
         <a href="#" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
+          <img src="vite.svg" className="logo" alt="Vite logo" />
         </a>
           <Navbar.Brand href="#">CodeHub</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
