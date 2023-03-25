@@ -801,4 +801,206 @@ body {
 </body>
 
 </html>
+        `},,{name:"Clase 5",code:`
+        <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario con Bootstrap</title>
+    <!-- Agregar los estilos de Bootstrap y Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-/F2jKOL9QtaQYhPm8sTGFuqt7rcm/u1WrU6BkT6P/qU6+XUyWXhPIyjp/bsC1q3r7nXXkzNvnZ1meJFctMDafA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Black"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ><\/script>
+
+    <style>
+      /* Estilos personalizados */
+      body {
+        background-color: #22193f;
+        color: #e21982;
+        font-size: 16px;
+        font-family: "Nunito", sans-serif;
+      }
+      h1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #22193f;
+        font-family: "Nunito Black", sans-serif;
+      }
+      input.form-control,
+      .input-group {
+        border-radius: 1rem;
+        font-size: 16px;
+        border-color: #c4c4c4;
+        font-family: "Nunito Regular", sans-serif;
+      }
+      .form-control {
+        border-left: none;
+      }
+      body > div.container.my-5 > div > div.col-md-6.fom > form > button {
+        border-radius: 1rem;
+        width: 100%;
+      }
+      a {
+        color: #e21982;
+        font-weight: bold;
+        font-family: "Nunito Bold", sans-serif;
+      }
+      .btn-primary {
+        background-color: #e21982;
+        border-color: #e21982;
+        color: #fff;
+        font-size: 16px;
+        font-family: "Nunito Bold", sans-serif;
+      }
+      .input-group-text {
+        border-radius: 1rem 0 0 1rem;
+        background: #fafafa;
+        border-right: none;
+      }
+      .icon {
+        color: #6a2a83;
+        font-size: 16px;
+      }
+      .fil {
+        background-color: #fafafa;
+        max-width: 900px;
+      }
+      #pie-pagina {
+        background-image: url("./ondas.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        height: 25rem;
+      }
+
+      .logo_login {
+        background-image: url("./login.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+      }
+
+      .fom {
+        margin: 3rem 0 3rem 0;
+      }
+      .logo_blanco {
+        margin: 7rem 0 8rem 0;
+        width: 10rem;
+      }
+      .form-check {
+        display: flex;
+        justify-content: end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row fil">
+        <div class="col-md-6 logo_login">
+          <img
+            class="logo_blanco"
+            src="./logo-blanco (1).svg"
+            class="img-fluid logo"
+            alt="Imagen responsive"
+          />
+        </div>
+        <div class="col-md-6 fom">
+          <h1 class="m-2 mb-5">Login</h1>
+          <form class="m-2">
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="bi bi-envelope-fill icon"></i
+                  ></span>
+                </div>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="email"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="bi bi-lock-fill icon"></i
+                  ></span>
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Contrase\uFFFDa"
+                />
+              </div>
+            </div>
+
+            <div class="form-group form-check">
+              <a href="#" class="ml-2">\uFFFDOlvidaste tu contrase\uFFFDa?</a>
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="pie-pagina"></div>
+
+    <!-- Agregar los scripts de Bootstrap y Font Awesome -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ><\/script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ><\/script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ><\/script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+      integrity="sha512-APGJ7hNjSo9Rnt7ZuWyGLt8ryfhVFNrqNJ3y2a7FlGtmiJ+jVXXEc/GpXZmmV7iSLt/f1oiV7MzS4J4DLPwEMw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ><\/script>
+  </body>
+</html>
+
         `}],o=u=>{a(u)};return se(hl,{className:"mt-5 mb-5",children:[k(hl,{className:"mt-3",children:k(i1,{className:"justify-content-center",children:se(vL,{md:8,className:"text-center",children:[k(uD,{src:o1,className:"animate__animated animate__slideInUp animate__delay-0.7s",fluid:!0,useMap:"#mapa-imagen",alt:"Imagen Clickeable"}),k("map",{name:"mapa-imagen",style:{backgroundColor:"transparent"}}),k("h1",{className:"mt-3",children:"Explorando el mundo de JavaScript, CSS y HTML"})]})})}),k("hr",{style:{color:"#0dcaf0"}}),se("div",{className:"container mt-5",children:[se("h4",{className:"pb-0 mb-0",children:[" ",k("a",{href:"#",target:"_blank",children:k("img",{src:dx,className:"logo react",alt:"React logo",style:{width:"7rem"}})}),"Desarollador Web"]}),se("div",{className:"row",children:[k("div",{className:"col-md-4",children:k("ul",{className:"list-group",children:i.map((u,c)=>k("li",{style:{background:"linear-gradient(#0dcaf0, transparent)"},className:`list-group-item butt ${r===u.name?"active":""}`,onClick:()=>o(u.name),children:u.name},u.name))})}),k("div",{className:"col-md-8",style:{textAlign:"left",padding:"0px"},children:k(n,{value:(s=i.find(u=>u.name===r))==null?void 0:s.code,code:(l=i.find(u=>u.name===r))==null?void 0:l.code})})]})]})]})},n=({language:r,value:a})=>a&&a.startsWith("//")?k("pre",{children:a}):k(OG,{language:r,style:xG,className:"codebox",children:a});return n.propTypes={language:St.exports.string,value:St.exports.string.isRequired},N.exports.useState(0),se("div",{className:"App",children:[k(e,{}),k(t,{}),k(SV,{}),k("df-messenger",{intent:"WELCOME","chat-title":"MunicipalidadRafaela","agent-id":"43b96101-8b27-4d8f-b3e9-ae4478f214c6","language-code":"es"}),k(o3,{})]})}zf.createRoot(document.getElementById("root")).render(k(it.StrictMode,{children:k(_V,{})}));
